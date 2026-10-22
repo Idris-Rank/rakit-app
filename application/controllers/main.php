@@ -2,7 +2,7 @@
 
 defined('DS') or exit('No direct script access.');
 
-class Home_Controller extends Base_Controller
+class Main_Controller extends Base_Controller
 {
     /**
      * Handle GET /.

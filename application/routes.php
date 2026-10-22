@@ -14,6 +14,6 @@ defined('DS') or exit('No direct script access.');
 */
 
 Route::get('/', [
-    'as' => 'home',
-    'uses' => 'home@index',
+    'as' => 'index',
+    'uses' => 'main@index',
 ]);
