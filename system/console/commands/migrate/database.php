@@ -64,7 +64,9 @@ class Database
      */
     public function batch()
     {
-        return $this->table()->max('batch');
+        $batch = $this->table()->max('batch');
+
+        return is_null($batch) ? 0 : $batch;
     }
 
     /**

@@ -6,13 +6,13 @@
         <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-jogja-700/75">Dengan penuh sukacita, kami mengundang Bapak/Ibu/Saudara untuk hadir dan memberikan doa restu pada hari bahagia kami.</p>
         <div class="mt-14 grid items-center gap-10 md:grid-cols-[1fr_auto_1fr]">
             <div class="reveal reveal-delay-1">
-                <div class="mx-auto mb-5 h-36 w-36 overflow-hidden rounded-full border-4 border-white shadow-soft"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Raka" class="h-full w-full object-cover"></div>
-                <h3 class="font-display text-4xl font-semibold">Raden Raka</h3><p class="mt-2 text-xs uppercase tracking-widest text-sogan">Putra pertama</p><p class="mt-2 text-sm text-jogja-700/75">Bapak Suryanto<br>& Ibu Ratih</p>
+                <div class="mx-auto mb-5 h-36 w-36 overflow-hidden rounded-full border-4 border-white shadow-soft"><img src="{{ $couple['groom_photo_url'] }}" alt="{{ $couple['groom'] }}" class="h-full w-full object-cover"></div>
+                <h3 class="font-display text-4xl font-semibold">{{ $couple['groom'] }}</h3><p class="mt-2 text-xs uppercase tracking-widest text-sogan">{{ $couple['groom_title'] }}</p><p class="mt-2 text-sm text-jogja-700/75">{{ $couple['groom_parents'][0] }}<br>& {{ $couple['groom_parents'][1] }}</p>
             </div>
             <div class="float font-display text-6xl italic text-sogan">&</div>
             <div class="reveal reveal-delay-2">
-                <div class="mx-auto mb-5 h-36 w-36 overflow-hidden rounded-full border-4 border-white shadow-soft"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Sekar" class="h-full w-full object-cover"></div>
-                <h3 class="font-display text-4xl font-semibold">Rara Sekar</h3><p class="mt-2 text-xs uppercase tracking-widest text-sogan">Putri kedua</p><p class="mt-2 text-sm text-jogja-700/75">Bapak Haryono<br>& Ibu Lestari</p>
+                <div class="mx-auto mb-5 h-36 w-36 overflow-hidden rounded-full border-4 border-white shadow-soft"><img src="{{ $couple['bride_photo_url'] }}" alt="{{ $couple['bride'] }}" class="h-full w-full object-cover"></div>
+                <h3 class="font-display text-4xl font-semibold">{{ $couple['bride'] }}</h3><p class="mt-2 text-xs uppercase tracking-widest text-sogan">{{ $couple['bride_title'] }}</p><p class="mt-2 text-sm text-jogja-700/75">{{ $couple['bride_parents'][0] }}<br>& {{ $couple['bride_parents'][1] }}</p>
             </div>
         </div>
     </div>

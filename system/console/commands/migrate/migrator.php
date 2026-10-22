@@ -103,7 +103,8 @@ class Migrator extends Command
 
         if (is_array($packages) && count($packages) > 0) {
             $migrations = array_filter($migrations, function ($migration) use ($packages) {
-                return in_array($migration['package'], $packages);
+                $package = is_array($migration) ? $migration['package'] : $migration->package;
+                return in_array($package, $packages);
             });
         }
 
@@ -115,6 +116,7 @@ class Migrator extends Command
         $migrations = array_reverse($migrations);
 
         foreach ($migrations as $migration) {
+            $migration = is_array($migration) ? $migration : get_object_vars($migration);
             $file = $this->display($migration);
 
             echo 'Rolling back: '.$file.PHP_EOL;

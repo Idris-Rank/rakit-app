@@ -13,6 +13,7 @@ defined('DS') or exit('No direct script access.');
 */
 
 return [
+    'admin' => ['handles' => 'admin'],
     'docs' => ['handles' => 'docs'],
 
     // Taruh array konfigurasi paket lain disini..

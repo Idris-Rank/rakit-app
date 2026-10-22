@@ -9,6 +9,7 @@
         @include('wedding.sections.couple')
         @include('wedding.sections.events')
         @include('wedding.sections.story')
+        @include('wedding.sections.gallery')
         @include('wedding.sections.rsvp')
     </main>
 

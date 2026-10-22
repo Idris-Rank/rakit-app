@@ -1,6 +1,10 @@
 #!/usr/bin/env php
 <?php
 
+// Muat environment variables sebelum konfigurasi Rakit dibaca.
+require_once __DIR__.'/vendor/autoload.php';
+\Dotenv\Dotenv::createImmutable(__DIR__)->safeLoad();
+
 // --------------------------------------------------------------
 // Catat timer awal (untuk benchmark)
 // --------------------------------------------------------------

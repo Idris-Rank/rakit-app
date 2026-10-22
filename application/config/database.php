@@ -50,7 +50,7 @@ return [
     'connections' => [
         'sqlite' => [
             'driver' => 'sqlite',
-            'database' => $_ENV['DB_SQLITE_DATABASE'] ?? 'application',
+            'database' => 'application',
             'prefix' => $_ENV['DB_PREFIX'] ?? '',
         ],
 
